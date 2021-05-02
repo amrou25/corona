@@ -30,7 +30,7 @@ $("#srch").click(function(){
      var d="<div class='d'>"+r+"</div>";
     $(".ss2").val("");
      
-   
+   var dt=r.last_updated;
  var totalp=r.cases;
   var testp=r.tests;
   var casesp=r.todayCases;
@@ -53,6 +53,7 @@ $("#ccode").html(ccode);
      $(".recc").html(recp);
      $("#img").attr("src",cd)
      $("#pop").html(pop);
+     $("#dt").html(dt);
      $(".recall").html(recall);
      $(".dall").html(dall);
      var xx=$(".tt").html();
@@ -236,7 +237,7 @@ input[type=submit] {
  </style>
 </head>
 <body>
-<button class="ld btn btn-success" type="button" disabled>
+<button class="ld btn btn-success" type="button">
   <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
   انتظر...
 </button>
@@ -250,7 +251,10 @@ input[type=submit] {
     </div>
   
  
-</div><br><br>
+</div><br>
+<div id="dt"></div>
+
+<br>
 
 <div class="col-xs-6 row">
   <div class="btn-success col ss">

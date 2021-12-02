@@ -1,6 +1,4 @@
 from flask import Flask,render_template,request
-from youtube_search import YoutubeSearch
-from pytube import YouTube
 from flask_cors import CORS
 from corona_python import Country
 app = Flask(__name__,template_folder='template')

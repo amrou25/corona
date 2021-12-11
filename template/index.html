@@ -72,10 +72,10 @@ $("#ccode").html(ccode);
      var xx=$(".tt").html();
      var xz=parseInt(xx);
      var xcc=xz*50;
-              var report="تم فحص "+tpm+" اشخاص من بين كل 100 شخص وظهرت النتيجه ايجابيه لعدد "+totalp+" وتوفي منهم "+dall+" وبقي "+crt+" في حالة حرجة يتلقون العلاج في العنايه المركزة وحسب اخر احصائيات بأن اجمالي   الاصابات النشطه في الوقت الحالي بلغت "+activep+" اصابة";
+            //  var report="تم فحص "+tpm+" اشخاص من بين كل 100 شخص وظهرت النتيجه ايجابيه لعدد "+totalp+" وتوفي منهم "+dall+" وبقي "+crt+" في حالة حرجة يتلقون العلاج في العنايه المركزة وحسب اخر احصائيات بأن اجمالي   الاصابات النشطه في الوقت الحالي بلغت "+activep+" اصابة";
      
      $(".ttll").html(xcc);
-     $("#report").html(report);
+     //$("#report").html(report);
      $(".ld").hide();
      
    }
@@ -373,11 +373,12 @@ input[type=submit] {
   </div>
   </div>
 <div class="col-xs-4 row">
-  <div onclick="$('#report').toggle();" class="btn-success ss">
- تقرير تفصيلي 
+  <div onclick="$('#omail').click();" class="btn-success ss">
+تواصل معنا
   </div>
   </div>
   <div style="display:none;" id="report" class="ss">
-    
+    <a id="omail" href="mailto:asahinai754@gmail.com?subject=Corona19-App=رسالتك">email</a>
+
   </div>
 </body>

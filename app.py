@@ -16,6 +16,9 @@ def hello_world():
     f=country.total_tests()
     
     return render_template('index.html',test=f,total=e,cases=a,death=b,rec=c,active=d)
+@app.route('/ads',methods=["POST","GET"])
+def hello_world():
+    return render_template('app-ads.txt')
 
 @app.route('/api',methods=["POST","GET"])
 def res():
